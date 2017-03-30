@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>扫描二维码</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		<link rel="stylesheet" type="text/css" href="../common/css/rest.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/css/meta.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/css/mui.min.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/bar.css"/>
+		<script src="../common/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script>
+			mui.plusReady(function(){
+				bar();
+			})
+			function bar(){
+				var bar = new plus.barcode.Barcode("div_bar",['QR','EAN13']);
+				bar.onmarked = function(type,code,file) {//当成功识别时的回调函数
+					//添加微信好友，发送ajax请求
+					bar.close();
+				}
+				bar.onerror = function (e){
+					console.log(e.message);
+				}
+				bar.start({conserve:true});
+				
+			}
+		</script>
+	</head>
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-icon-arrowthinleft"></a>
+			<h1 class="mui-title">扫描二维码</h1>
+		</header>
+		<div id="div_bar" class="mui-content">
+			
+			<!--<div class="bar_info">
+				将二维码放入框内，即可扫描<div>或</div>
+			</div>
+			<div class="album" onclick="getImg()">从相册中选择</div>
+			<script type="text/javascript">
+				function getImg(){
+					plus.gallery.pick(function(path){
+						
+					},function(e){
+						
+					},{filter:"image"});
+				}
+			</script>-->
+		</div>
+		
+	</body>
+</html>

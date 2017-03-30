@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" type="text/css" href="../common/css/rest.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/icons-extra.css" />
+
+		<link rel="stylesheet" type="text/css" href="../common/css/meta.css" />
+		<link rel="stylesheet" type="text/css" href="css/hotPic.css" />
+		<script src="../common/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-icon-arrowthinleft"></a>
+			<h1 class="mui-title">好物</h1>
+		</header>
+		<div class="mui-content"></div>
+	</body>
+	<script type="text/javascript">
+		//启用双击监听
+		mui.init({
+			gestureConfig:{
+				doubletap:true
+			},
+			subpages:[{ 
+				url:'goods_sub.html',
+				id:'goods_sub.html',
+				styles:{
+					top: '45px',
+					bottom: '0px', 
+				}
+			}] 
+		});
+	
+		var contentWebview = null;
+		document.querySelector('header').addEventListener('doubletap',function () {
+			if(contentWebview==null){
+				contentWebview = plus.webview.currentWebview().children()[0];
+			}
+			contentWebview.evalJS("mui('#pullrefresh').pullRefresh().scrollTo(0,0,100)");
+		});
+	</script>
+
+</html>

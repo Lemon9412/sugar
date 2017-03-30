@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>编辑图片</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" type="text/css" href="../common/css/rest.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/meta.css" />
+
+		<link rel="stylesheet" href="../common/css/mui.min.css">
+
+		<script src="../common/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.mui-bar .mui-bar-nav {
+				position: fixed;
+			}
+			
+			.mui-bar .mui-btn-link {
+				font-size: 16px;
+				line-height: 44px;
+				top: 0;
+				padding: 0;
+				color: #ff5959;
+				border: 0;
+			}
+			
+			textarea {
+				height: 30vh;
+				resize: none;
+			}
+			
+			.image-list>img {
+				width: 50vw;
+				height: 30vh;
+			}
+		</style>
+		<script type="text/javascript">
+			mui.plusReady(function() {
+				var imgUrl = plus.webview.currentWebview().imgUrl;
+				var img = document.createElement("img");
+				img.src = imgUrl;
+				document.getElementById("image-list").appendChild(img);
+				
+			});
+		</script>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<a class="mui-btn mui-btn-blue mui-btn-link mui-pull-right mui-action-back" onclick="close()">发布</a>
+		</header>
+		
+
+		<div class="mui-content">
+			<div class="mui-content-padded">
+				<div class="mui-inline">图片描述~</div>
+			</div>
+			<div class="row mui-input-row">
+				<textarea id='question' class="mui-input-clear question" placeholder="说点什么吧..."></textarea>
+			</div>
+			<div class="mui-content-padded">
+				<div class="mui-inline">图片</div>
+			</div>
+			<div id='image-list' class="row image-list">
+
+			</div>
+		</div>
+
+	</body>
+	<script>
+		var add_img = window.plus.webview.getWebviewById(add_img);
+				window.plus.webview.close(add_img);
+	</script>
+</html>

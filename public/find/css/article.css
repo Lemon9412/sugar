@@ -1,0 +1,40 @@
+.mui-grid-view.mui-grid-9 {
+	 background-color: #FFFFFF;
+}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+    padding: 4px 5px;
+} 
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+    font-size: 14px;
+    line-height: 14px;
+    height: 14px;
+    margin-top: 0px; 
+    color: #999999;
+}
+.mui-table-view {
+    position: relative;
+    margin-top: 1.2vh;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    background-color: #fff;
+}
+.mui-table-view-cell p {
+    display: inline;
+    font-size: ;
+}
+.mui-ellipsis-2 {
+    margin-bottom: 25px;
+}
+.mui-icon-extra {
+    font-size: 14px !important;
+    margin-right: 4vw;
+    position: relative;
+    top: 1vh;
+}
+.mui-table-view .mui-media-object {
+    max-height: 25vh;
+    max-width: 25vw;
+}
+
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>发现</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../common/css/rest.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/meta.css" />
+
+		<link rel="stylesheet" type="text/css" href="../common/css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/icons-extra.css" />
+
+		<link rel="stylesheet" type="text/css" href="../common/css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/find_index.css" />
+
+		<script src="../common/js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="../common/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="../common/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--<script src="js/index.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="../common/js/mui.view.js"></script>
+		<script type="text/javascript">
+			function openBar() {
+				window.plus.webview.open("bar.html", "bar", {}, "slide-in-right", 300);
+			}
+			function hotPic() {
+				window.plus.webview.open("hotPic.html", "hotPic", {}, "slide-in-right", 300)
+			}
+			function dynamic() {
+				window.plus.webview.open("dynamic.html", "dynamic", {}, "slide-in-right", 300)
+			}
+			function club() {
+				window.plus.webview.open("club.html", "club", {}, "slide-in-right", 300)
+			}
+			function goods() {
+				window.plus.webview.open("goods.html", "goods", {}, "slide-in-right", 300)
+			}
+			function article() {
+				window.plus.webview.open("article.html", "article", {}, "slide-in-right", 300)
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<!--头部搜索框-->
+		<header id="header" class="mui-bar mui-bar-nav">
+			<div class="mui-input-row mui-search">
+				<input type="search" class="mui-input-clear" placeholder="搜索感兴趣的内容...">
+			</div>
+			<div class="flex-container">
+				<a onclick="openBar()"><span class="mui-icon-extra mui-icon-extra-sweep"></span></a>
+			</div>
+		</header>
+		
+
+		<!--关注动态、我的club-->
+		<div class="content_box">
+			<div class="attention">
+				<div class="img1"></div>
+				<a onclick="dynamic()">关注动态</a>
+			</div>
+			<div class="club">
+				<div class="img2"></div>
+				<a onclick="club()">我的Club</a>
+			</div>
+		</div>
+
+		<!--内容推荐-->
+		<div class="recommend">
+			内容推荐
+		</div>
+		<ul class="mui-table-view mui-table-view-chevron">
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right" onclick="hotPic()">
+					<img class="mui-media-object mui-pull-left" src="../common/img/explore_icon_picture.png">
+					<div class="mui-media-body">
+						热门图片
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class='mui-navigate-right' onclick="article()">
+					<img class="mui-media-object mui-pull-left" src="../common/img/explore_icon_article.png">
+					<div class="mui-media-body">
+						文章
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right" onclick="goods()">
+					<img class="mui-media-object mui-pull-left" src="../common/img/explore_icon_goods.png">
+					<div class="mui-media-body">
+						好物
+					</div>
+				</a>
+			</li>
+		</ul>
+		<!--内容推荐结束-->
+
+		<!--轮播-->
+		<div class="swiper-container">
+			<div id="banner" class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/banner1.png">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/banner2.png">
+				</div>
+				<div class="swiper-slide">
+					<img src="images/banner3.png">
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!--轮播结束-->
+
+		<!--图片分类-->
+		<div class="recommend">
+			图片分类
+		</div>
+		<ul class="picture_ul">
+			<li>
+				<a class="picture_a" href="">
+					<img src="images/p1.png" />
+					<p>美食菜谱</p>
+				</a>
+			</li>
+			<li>
+				<a class="picture_a" href="">
+					<img src="images/p2.png" />
+					<p>手工DIV</p>
+				</a>
+			</li>
+			<li>
+				<a class="picture_a" href="">
+					<img src="images/p3.png" />
+					<p>插画绘画</p>
+				</a>
+			</li>
+			<li>
+				<a class="picture_a" href="">
+					<img src="images/p4.png" />
+					<p>家居生活</p>
+				</a>
+			</li>
+		</ul>
+		<div class="line_dian">. . .</div>
+		<ul class="picture_ul">
+			<li>
+				<a class="picture_a" href="">
+					<img src="images/p1.png" />
+					<p>时尚街拍</p>
+				</a>
+			</li>
+			<li>
+				<a class="picture_a" href="">
+					<img src="images/p2.png" />
+					<p>美容美发</p>
+				</a>
+			</li>
+			<li>
+				<a class="picture_a" href="">
+					<img src="images/p3.png" />
+					<p>旅行</p>
+				</a>
+			</li>
+			<li>
+				<a class="picture_a" href="">
+					<img src="images/p4.png" />
+					<p>婚纱婚礼</p>
+				</a>
+			</li>
+		</ul>
+		<div class="line_dian">. . .</div>
+		<ul class="picture_ul">
+			<li>
+				<a class="picture_a" href="">
+					<img src="images/p1.png" />
+					<p>萌宠</p>
+				</a>
+			</li>
+			<li>
+				<a class="picture_a" href="">
+					<img src="images/p2.png" />
+					<p>头像表情</p>
+				</a>
+			</li>
+			<li>
+				<a class="picture_a" href="">
+					<img src="images/p3.png" />
+					<p>壁纸</p>
+				</a>
+			</li>
+			<li>
+				<a class="picture_a" href="">
+					<img src="images/p4.png" />
+					<p>美图摄影</p>
+				</a>
+			</li>
+		</ul>
+	</body>
+	<script src="../common/js/mui.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		mui.init({
+			swipeBack: true //启用右滑关闭功能
+		});
+	</script>
+	<script type="text/javascript">
+		//轮播
+		var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				autoplay: 3000,
+				speed: 300,
+				autoplayDisableOnInteraction: false,
+				loop: true,
+			}
+
+		);
+	</script>
+
+</html>

@@ -1,0 +1,50 @@
+#left-container {
+	width: 50vw;
+	float: left;
+	height: auto;
+}
+#right-container {
+	width: 50vw;
+	float: left;
+	height: auto;
+}
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+    font-size: 12px;
+    text-overflow: ellipsis;
+    color: #333;
+}
+.mui-card {
+	float: left;
+	/*-webkit-column-break-inside: avoid; 
+	page-break-inside: avoid; 
+	break-inside: avoid; 
+	flex-direction: column;
+	display: flex;
+    flex-direction: column;*/
+}
+.mui-content>.mui-card:first-child {
+   margin-top: 10px;
+}
+.mui-card-footer, .mui-card-header {
+   
+    font-size: 12px;
+}
+.mui-icon-extra {
+    font-family: MuiiconSpread;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+}
+.mui-icon-extra-heart {
+	color: #CCCCCC;
+	font-size: 22px;
+}
+
+.mui-icon-extra-heart-filled {
+	color: #ff5959;
+	font-size: 22px;
+}

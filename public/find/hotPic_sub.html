@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../common/css/rest.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/icons-extra.css" />
+
+		<link rel="stylesheet" type="text/css" href="../common/css/meta.css" />
+		<link rel="stylesheet" type="text/css" href="css/hotPic.css" />
+		<script src="../common/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body>
+		<!--下拉刷新容器-->
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+
+			<div class="mui-scroll">
+				<!--数据列表-->
+				<div class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<ul class="mui-table-view mui-grid-view">
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype5.png">
+										<div class="mui-media-body">赏味期限</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype6.png">
+										<div class="mui-media-body">手艺宅子</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype7.png">
+										<div class="mui-media-body">种草清单</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype8.png">
+										<div class="mui-media-body">想留口水</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mui-slider-item">
+							<ul class="mui-table-view mui-grid-view">
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a>
+										<img class="mui-media-object" src="images/pictype1.png">
+										<div class="mui-media-body">今日Top榜</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype2.png">
+										<div class="mui-media-body">宅家生活</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype3.png">
+										<div class="mui-media-body">光影世界</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype4.png">
+										<div class="mui-media-body">旅拍文化</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mui-slider-item">
+							<ul class="mui-table-view mui-grid-view">
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype5.png">
+										<div class="mui-media-body">赏味期限</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype6.png">
+										<div class="mui-media-body">手艺宅子</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype7.png">
+										<div class="mui-media-body">种草清单</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype8.png">
+										<div class="mui-media-body">想留口水</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<ul class="mui-table-view mui-grid-view">
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype1.png">
+										<div class="mui-media-body">今日Top榜</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype2.png">
+										<div class="mui-media-body">宅家生活</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype3.png">
+										<div class="mui-media-body">光影世界</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media mui-col-xs-3">
+									<a href="#"><img class="mui-media-object" src="images/pictype4.png">
+										<div class="mui-media-body">旅拍文化</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mui-content">
+					<div id="left-container">
+					</div>
+					<script>
+						mui.ajax('/find/hotPic', {
+							dataType: 'json', //服务器返回json格式数据
+							type: 'get', //HTTP请求类型
+							success: function(data) {
+								//服务器返回响应，根据响应结果，分析是否登录成功
+								for(var i = 0; i < 3; i++) {
+									var card = document.createElement('div');
+									card.className = 'mui-card';
+									card.innerHTML = '<div class="mui-card-header mui-card-media" style="width:45vw;height:50vw;background-image:url(' + data[i].imgUrl + ')"></div>' +
+										'<div class="mui-card-content">' +
+										'<div class="mui-card-content-inner">' +
+										'<p>' + data[i].time + '</p>' +
+										'<p style="color: #333;">' + data[i].abstract + '</p>' +
+										'</div>' +
+										'</div>' +
+										'<div class="mui-card-footer">' +
+										'<a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-heart"></span></a>' +
+										'<a class="mui-card-link">' + data[i].petname + '</a>' +
+										'</div>';
+									document.getElementById("left-container").appendChild(card);
+								}
+							},
+							error: function(xhr, type, errorThrown) {
+								//异常处理；
+								console.log(type);
+							}
+						});
+					</script>
+					<div id="right-container" class="">
+					</div>
+					<script>
+						mui.ajax('/find/hotPic', {
+							dataType: 'json', //服务器返回json格式数据
+							type: 'get', //HTTP请求类型
+							success: function(data) {
+								//服务器返回响应，根据响应结果，分析是否登录成功
+								for(var i = 3; i < 6; i++) {
+									var card = document.createElement('div');
+									card.className = 'mui-card';
+									card.innerHTML = '<div class="mui-card-header mui-card-media" style="width:45vw;height:50vw;background-image:url(' + data[i].imgUrl + ')"></div>' +
+										'<div class="mui-card-content">' +
+										'<div class="mui-card-content-inner">' +
+										'<p>' + data[i].time + '</p>' +
+										'<p style="color: #333;">' + data[i].abstract + '</p>' +
+										'</div>' +
+										'</div>' +
+										'<div class="mui-card-footer">' +
+										'<a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-heart"></span></a>' +
+										'<a class="mui-card-link">' + data[i].petname + '</a>' +
+										'</div>';
+									document.getElementById("right-container").appendChild(card);
+								}
+							},
+							error: function(xhr, type, errorThrown) {
+								//异常处理；
+								console.log(type);
+							}
+						});
+					</script>
+
+				</div>
+			</div>
+		</div>
+		<script>
+			mui.init({
+				pullRefresh: {
+					container: '#pullrefresh',
+					down: {
+						callback: pulldownRefresh
+					},
+					up: {
+						contentrefresh: '正在加载...',
+						callback: pullupRefresh
+					}
+				}
+			});
+			/**
+			 * 下拉刷新具体业务实现
+			 */
+			function pulldownRefresh() {
+				setTimeout(function() {
+					mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+					mui.ajax('/find/hotPic', {
+						dataType: 'json', //服务器返回json格式数据
+						type: 'get', //HTTP请求类型
+						success: function(data) {
+							//获得服务器响应
+							var left = document.body.querySelector('#left-container');
+							var right = document.body.querySelector("#right-container");
+							var cards = document.body.querySelectorAll('.mui-card');
+							for(var i = cards.length, len = i + 2; i < len; i++) {
+								var card = document.createElement('div');
+								card.className = 'mui-card';
+								card.innerHTML = '<div class="mui-card-header mui-card-media" style="width:45vw;height:50vw;background-image:url(' + data[i].imgUrl + ')"></div>' +
+									'<div class="mui-card-content">' +
+									'<div class="mui-card-content-inner">' +
+									'<p>' + data[i].time + '</p>' +
+									'<p style="color: #333;">' + data[i].abstract + '</p>' +
+									'</div>' +
+									'</div>' +
+									'<div class="mui-card-footer">' +
+									'<a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-heart"></span></a>' +
+									'<a class="mui-card-link">' + data[i].petname + '</a>' +
+									'</div>';
+								//下拉刷新，新纪录插到最前面；
+								if(i % 2 == 0) {
+									left.insertBefore(card, left.firstChild);
+								} else {
+									right.insertBefore(card, right.firstChild);
+								}
+
+							}
+						},
+						error: function(xhr, type, errorThrown) {
+							console.log(type);
+						}
+					});
+				}, 1500);
+			}
+			var count = 0;
+			/**
+			 * 上拉加载具体业务实现
+			 */
+			function pullupRefresh() {
+				setTimeout(function() {
+					mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+					mui.ajax('/find/hotPic', {
+						dataType: 'json', //服务器返回json格式数据
+						type: 'get', //HTTP请求类型
+						success: function(data) {
+							//服务器返回响应，根据响应结果，分析是否登录成功；
+							var left = document.body.querySelector('#left-container');
+							var right = document.body.querySelector("#right-container");
+							var cards = document.body.querySelectorAll('.mui-card');
+							for(var i = cards.length, len = i + 3; i < len; i++) {
+								var card = document.createElement('div');
+								card.className = 'mui-card';
+								card.innerHTML = '<div class="mui-card-header mui-card-media" style="width:45vw;height:50vw;background-image:url(' + data[i].imgUrl + ')"></div>' +
+									'<div class="mui-card-content">' +
+									'<div class="mui-card-content-inner">' +
+									'<p>' + data[i].time + '</p>' +
+									'<p style="color: #333;">' + data[i].abstract + '</p>' +
+									'</div>' +
+									'</div>' +
+									'<div class="mui-card-footer">' +
+									'<a class="mui-card-link"><span class="mui-icon-extra mui-icon-extra-heart"></span></a>' +
+									'<a class="mui-card-link">' + data[i].petname + '</a>' +
+									'</div>';
+								if(i % 2 == 0) {
+									left.appendChild(card);
+								} else {
+									right.appendChild(card);
+								}
+							}
+						},
+						error: function(xhr, type, errorThrown) {
+							//异常处理；
+							console.log(type);
+						}
+					});
+
+				}, 1500);
+			}
+			if(mui.os.plus) {
+				mui.plusReady(function() {
+					setTimeout(function() {
+						mui('#pullrefresh').pullRefresh().pullupLoading();
+					}, 1000);
+
+				});
+			} else {
+				mui.ready(function() {
+					/*mui('#pullrefresh').pullRefresh().pullupLoading();*/
+					/*mui('#pullup-container').pullRefresh().disablePullupToRefresh();*/
+
+				});
+			}
+		</script>
+	</body>
+
+</html>

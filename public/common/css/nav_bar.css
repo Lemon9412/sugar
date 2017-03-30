@@ -1,0 +1,41 @@
+/*公用头部导航开始*/
+.lin-height {
+	line-height: 44px!important;
+	/*不用修改*/
+}
+/*公用头部导航结束*/
+/*首页头部导航开始*/
+.mui-icon-home-add {
+	color: red!important;
+	float: right!important;
+}
+/*首页头部导航结束*/
+/*首页子界面头部导航开始*/
+.mui-icon-home-more {
+	float: right!important;
+}
+.mui-title-font {
+	position: absolute;
+	float: left;
+	line-height: 44px;
+	left: 60px;
+}
+/*首页子界面头部导航结束*/
+
+/*发现头部搜索框开始*/
+.mui-search-size {
+	width: 85vw!important;;
+}
+.mui-icon-find-sweep {
+	float: right!important;
+	margin-top: -2rem;
+}
+/*发现头部搜索框结束*/
+/*商店头部导航开始*/
+.mui-icon-extra-shop {
+	float: right!important;
+	color: #888888!important;
+}
+/*商店头部导航结束*/
+
+

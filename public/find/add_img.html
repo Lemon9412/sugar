@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" type="text/css" href="../common/css/rest.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/meta.css" />
+
+		<link rel="stylesheet" href="../common/css/mui.min.css">
+
+		<script src="../common/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../common/js/mui.view.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			.mui-bar {
+				box-shadow: none;
+				background-color: rgba(0, 0, 0, 0);
+			}
+			
+			.mui-content {
+				height: 100vh;
+				background-color: rgba(9, 9, 9, 0.3);
+			}
+			
+			.container {
+				width: 80vw;
+				height: 60vh;
+				margin-top: 15vh;
+				margin-left: 20vw;
+			}
+			
+			.item {
+				width: 80vw;
+				height: 15vh;
+			}
+			
+			img {
+				height: 20vw;
+				float: left;
+			}
+			
+			p {
+				float: left;
+				font-size: 16px;
+				color: white;
+				padding: 4vh 10vw;
+			}
+		</style>
+		<script type="text/javascript">
+			function getImg() {
+				plus.gallery.pick(function(path) {
+					var filePath = path;
+					mui.openWindow({
+						url: "editImage.html",
+						extras: {
+							id:"add_img",
+							imgUrl: filePath //自定义扩展参数，可以用来处理页面间传值
+						},
+						createNew: false, //是否重复创建同样id的webview，默认为false:不重复创建，直接显示
+						show: {
+							autoShow: true, //页面loaded事件发生后自动显示，默认为true
+							aniShow: 'slide-in-bottom', //页面显示动画，默认为”slide-in-right“；
+							duration: '500' //页面动画持续时间，Android平台默认100毫秒，iOS平台默认200毫秒；
+						}
+					});
+				}, function(e) {
+					console.log("取消选择图片");
+				}, {
+					filter: "image"
+				});
+			}
+			function camera() {
+				var camera = plus.camera.getCamera();
+				camera.captureImage(function() {
+				},function() {
+					
+				},{
+					filename:"_doc/",//保存的是文件名用目录，文件名称由系统生成，保证不重复。
+					format:camera.supportedImageFormats[0]
+				});
+			}
+		</script>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-arrowthinleft" style="color: #fff;"></a>
+		</header>
+		<div class="mui-content">
+			<div class="container">
+				<div class="item" onclick="camera()">
+					<img src="../common/img/add_icon_camera.png" />
+					<p>拍照</p>
+				</div>
+				<div class="item" onclick="getImg()">
+					<img src="../common/img/add_icon_photo.png" />
+					<p>从相册中上传图片</p>
+				</div>
+				<div class="item">
+					<img src="../common/img/add_icon_web.png" />
+					<p>从网页中抓取图片</p>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

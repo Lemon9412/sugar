@@ -1,0 +1,157 @@
+
+
+/*=============头部搜索框============
+ ===================================*/
+
+.mui-input-row {
+	width: 85vw;
+	float: left;
+}
+.flex-container {
+	float: right;
+	padding-top: 1.5vh;
+	margin-right: 1vw;
+}
+.mui-search .mui-placeholder .mui-icon {
+    font-size: 20px;
+    color: #999;
+}
+/*=========关注动态我的Club========
+=================================*/
+.content_box {
+	width: 100%;
+	height: 4rem;
+	position: relative;
+	margin-top: 44px;
+	background-color: white;
+}
+.attention {
+	width: 50%;
+	height: 3rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 0rem;
+	text-align: center;
+	border-right: 0.05rem solid #999;
+}
+.club {
+	width: 50%;
+	height: 3rem;
+	position: absolute;
+	top: 0.5rem;
+	right: 0rem;
+	text-align: center;
+}
+.img1 {
+	width: 2rem;
+    height: 2rem;
+    float: left;
+    margin-left: 25%;
+    margin-top: 0.5rem;
+    background-image: url(../../common/img/explore_icon_follow.png);
+    background-size: 100% 100%;
+}
+.img2 {
+	width: 2rem;
+	height: 2rem;
+	float: left;
+	margin-left: 25%;
+	margin-top: 0.5rem;
+	background-image: url(../../common/img/explore_icon_club.png);
+	background-size: 100% 100%;
+}
+
+.attention>a {
+	width: 40%;
+	height: 1.5rem;
+	font-size: 0.9rem;
+	float: left;
+	line-height: 3rem;
+}
+.club>a {
+	width: 40%;
+	height: 1.5rem;
+	font-size: 0.9rem;
+	float: left;
+	line-height: 3rem;
+}
+
+/*=========内容推荐=========
+=========================*/
+.mui-table-view .mui-media-object {
+    line-height: 21px;
+    max-width: 23px;
+    height: 21px;
+}
+.recommend {
+	width: 100vw;
+	height: 5vh;
+	color: #999;
+	line-height: 5vh;
+	text-indent: 2vh;
+}
+.mui-media-body {
+	font-size: 0.9rem;
+}
+
+/*===========轮播===========
+==========================*/
+.swiper-container {
+	width: 100vw;
+	height: 20vh;
+	background-color:white;
+	margin-top: 2vh;
+}
+.swiper-slide {
+	padding-top: 2vh;
+	padding-left: 3vw;
+}
+.swiper-slide img {
+	width: 94vw;
+	height: 16vh;
+}
+
+/*
+ * ============图片分类=============
+ * ==============================
+ */
+
+.picture_ul {
+	width: 100%;
+	height: 8rem;
+	background-color: #ffffff;
+}
+.picture_ul li {
+	width: 50%;
+	height: 4rem;
+	float: left;
+	color: #333;
+}
+.picture_a {
+	width: 50%;
+	height: 4rem;
+	line-height: 4rem;
+}
+.picture_a>img {
+	width: 3rem;
+	height: 3rem;
+	float: left;
+	margin-top: 0.5rem;
+	margin-left: 20%;
+}
+.picture_a>p {
+	font-size: 0.8rem;
+	float: left;
+	margin-left: 3%;
+	color: #333;
+}
+.line_dian {
+	width: 100%;
+	height: 3rem;
+	text-align: center;
+	line-height: 3rem;
+	color: #999;
+	font-size: 1.5rem;
+}
+
+
