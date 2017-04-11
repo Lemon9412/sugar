@@ -1,0 +1,5 @@
+[
+{"imgId":1,"url":"img/discount4.png","inner1":"让文字自带重点","inner2":"17.1","inner3":"18","onclick":"discount()"},
+{"imgId":2,"url":"img/discount1.png","inner1":"连续10年Cosme No.1","inner2":"72","inner3":"178","onclick":"discount()"},
+{"imgId":3,"url":"img/discount6.png","inner1":"毛孔黑头1瓶搞定","inner2":"112","inner3":"118","onclick":"discount()"}
+]

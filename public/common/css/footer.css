@@ -1,0 +1,16 @@
+/*底部导航开始*/
+.nav-footer-img {
+  width: 2rem!important;
+  position: relative;
+  top: 0.1rem;
+}
+.mui-bar {
+}
+.mui-bar p{
+	margin-bottom: -9px!important;
+}
+.mui-bar a{
+	font-size: 0.7rem;
+	color: #888888!important;
+}
+/*底部导航结束*/

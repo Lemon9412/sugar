@@ -104,7 +104,7 @@
 					<div id="left-container">
 					</div>
 					<script>
-						mui.ajax('json/goods.json', {
+						mui.ajax('/find/goods', {
 							dataType: 'json', //服务器返回json格式数据
 							type: 'get', //HTTP请求类型
 							success: function(data) {
@@ -134,7 +134,7 @@
 					<div id="right-container" class="">
 					</div>
 					<script>
-						mui.ajax('json/goods.json', {
+						mui.ajax('/find/goods', {
 							dataType: 'json', //服务器返回json格式数据
 							type: 'get', //HTTP请求类型
 							success: function(data) {
@@ -183,7 +183,7 @@
 			function pulldownRefresh() {
 				setTimeout(function() {
 					mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
-					mui.ajax('json/goods.json', {
+					mui.ajax('/find/goods', {
 						dataType: 'json', //服务器返回json格式数据
 						type: 'get', //HTTP请求类型
 						success: function(data) {
@@ -226,7 +226,7 @@
 			function pullupRefresh() {
 				setTimeout(function() {
 					mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
-					mui.ajax('json/goods.json', {
+					mui.ajax('/find/goods', {
 						dataType: 'json', //服务器返回json格式数据
 						type: 'get', //HTTP请求类型
 						success: function(data) {

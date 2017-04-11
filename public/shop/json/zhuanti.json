@@ -1,0 +1,15 @@
+[
+{"imgId":1,"url":"img/zhuanti1.png","inner1":"全场满99元减5元，满159元减10元","inner2":"特惠团·第三期","onclick":"zhuanti()"},
+{"imgId":2,"url":"img/zhuanti2.png","inner1":"一本高颜值手账的诞生","inner2":"第十八期·生活家","onclick":"zhuanti()"},
+{"imgId":3,"url":"img/zhuanti3.png","inner1":"懒癌党的秋冬护肤心得","inner2":"抗燥保湿专场","onclick":"zhuanti()"},
+{"imgId":4,"url":"img/zhuanti4.png","inner1":"少女的睡前养护经","inner2":"身体护理专场","onclick":"zhuanti()"},
+{"imgId":5,"url":"img/zhuanti5.png","inner1":"如何过一个温暖干净的冬天","inner2":"祛螨保温专场","onclick":"zhuanti()"},
+{"imgId":6,"url":"img/zhuanti6.png","inner1":"有了这些美炸天的文具，我睁开眼就要学习","inner2":"手账好物专场","onclick":"zhuanti()"},
+{"imgId":7,"url":"img/zhuanti7.png","inner1":"用厉害的原始技艺把家打扫的一尘不染","inner2":"艺之初手工家居专场","onclick":"zhuanti()"},
+{"imgId":8,"url":"img/zhuanti8.png","inner1":"杜绝闭口肆意横行","inner2":"日常去闭口专场","onclick":"zhuanti()"},
+{"imgId":9,"url":"img/zhuanti9.png","inner1":"摆脱干冷，办公室续命大法","inner2":"办公家居专场","onclick":"zhuanti()"},
+{"imgId":10,"url":"img/zhuanti10.png","inner1":"周一购物指南|折扣再多，值最重要","inner2":"第十五期·不二主义","onclick":"zhuanti()"},
+{"imgId":11,"url":"img/zhuanti11.png","inner1":"滋补有道 青春常驻","inner2":"女性保健品专场","onclick":"zhuanti()"},
+{"imgId":12,"url":"img/zhuanti12.png","inner1":"贵有贵的价值","inner2":"高品质单品专场","onclick":"zhuanti()"},
+{"imgId":13,"url":"img/zhuanti13.png","inner1":"幸福吃货的悠闲食光","inner2":"活力零食专场","onclick":"zhuanti()"}
+]

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>摇一摇</title>
+		<!--公用css-->
+		<link rel="stylesheet" type="text/css" href="../common/css/meta.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/rest.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/mui.min.css" />
+		<!--mui内置额外的图标-->
+		<link rel="stylesheet" type="text/css" href="../common/css/icons-extra.css" />
+		<!--导航栏公用css-->
+		<link rel="stylesheet" type="text/css" href="../common/css/nav_bar.css" />
+		<!--本界面css-->
+		<link rel="stylesheet" type="text/css" href="css/class_hf.css" />
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-back"></a>
+			<span class="mui-title-font">摇一摇</span>
+		</header>
+
+		<div id="status" class="mui-content">
+			<img style="width: 100%;" src="img/shake.png" />
+		</div>
+
+	</body>
+	<!--公用js-->
+	<script src="../common/js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/shop.js" type="text/javascript" charset="utf-8"></script>
+	<!--链接js-->
+	<script src="js/link.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		mui.init({
+					swipeBack: true //启用右滑关闭功能
+				});
+	</script>
+	<script>
+		var shake = 4000,
+			last_update = 0,
+			count = 0,
+			x = y = z = last_x = last_y = last_z = 0;
+		//运动事件监听
+		if(window.DeviceMotionEvent) {
+			window.addEventListener("devicemotion", deviceMotionHandler, false);
+		} else {
+			alert("本设备不支持devicemotion事件");
+		}
+		console.log(new Date().valueOf());
+		//获取加速度信息
+		//通过监听上一步获取到的x, y, z 值在一定时间范围内的变化率，进行设备是否有进行晃动的判断。
+		//而为了防止正常移动的误判，需要给该变化率设置一个合适的临界值。
+		function deviceMotionHandler(eventData) {
+			var acceleration = eventData.accelerationIncludingGravity,
+				//accelerationIncludingGravity 考虑了重力的影响
+				//获取当前时间
+				currTime = new Date().valueOf(),
+				diffTime = currTime - last_update;
+
+			if(diffTime > 100) {
+				last_update = currTime;
+				x = acceleration.x;
+				y = acceleration.y;
+				z = acceleration.z;
+				var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000
+				var status = document.getElementById("status");
+				if(speed > shake) {
+					alert("抱歉没有摇到，请继续努力哦!");
+				}
+
+				last_x = x;
+				last_y = y;
+				last_z = z;
+			}
+		}
+		//针对三个方向的加速度进行计算，间隔测量它们，考察它们在固定时间段里的变化率
+	</script>
+
+</html>

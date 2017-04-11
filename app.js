@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var find = require('./routes/find');
+var shop = require('./routes/shop');
 
 var app = express();
 
@@ -36,7 +37,8 @@ client.connect("mongodb://127.0.0.1:27017/sugar", function (error, database) {
 
 app.use('/', index);
 app.use('/users', users);
-app.use('./find',find);
+app.use('/find',find);
+app.use('/shop',shop);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

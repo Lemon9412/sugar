@@ -1,0 +1,210 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.main{
+	width: 100%;
+	height: auto;
+}
+
+.nav{
+	z-index: 1;
+	width: 100%;
+	height: 2.5rem;
+	background-color: red;
+	position: fixed;
+	background-color: white;
+	/*bottom: 0;
+	left: 0;*/
+	border: 1px solid #CCCCCC;
+}
+.nav .word{
+	position: absolute;
+	font-size: 1rem;
+	margin-top: 0.6rem;
+	margin-left: 3rem;
+	
+}
+.nav img {
+	width: 11%;
+	height: 1.5rem;
+	top: 0.6rem;
+	position: absolute;
+}
+.nav span{
+	position: absolute;
+	color: black;
+	font-size: 1.5rem;
+	margin-left: 1.5rem;
+	margin-top: 0.6rem;
+}
+.top h3{
+	margin-left: 0.8rem;
+}
+.top h5{
+	margin-top: -2rem;
+	margin-left: 4rem;
+	color: black;
+}
+
+.top{
+	position: absolute;
+	margin-top: 3rem;
+	width: 100%;
+	height: 20rem;
+	
+}
+.tou{
+	width: 2rem;
+	height: 2rem;
+	margin-top: 1rem;
+	margin-left: 1rem;
+	border-radius: 50%;
+}
+.top span{
+	position: absolute;
+	font-size: 0.7rem;
+	margin-top: 0.2rem;
+	margin-left: 4rem;
+	
+}
+.body_top{
+	width: 92%;
+	height: rem;
+	position: absolute;
+	margin-top: 9rem;
+	margin-left: 1rem;
+}
+.body_top p{
+	font-size: 0.8rem;
+	color: black;
+}
+.body_top span{
+	
+	font-size: 0.8rem;
+	
+}
+.body_top_img{
+	margin-top: 2rem;
+	width: 100%;
+	height: 15rem;
+	margin-bottom: 3rem;
+}
+.body_zhong{
+	width: 92%;
+	height: rem;
+	position: absolute;
+	margin-top: 60rem;
+	margin-left: 1rem;
+}
+.body_zhong p{
+	font-size: 0.8rem;
+	margin-top: 3rem;
+	color: black;
+}
+.body_zhong span{
+	font-size: 0.8rem;
+	
+}
+.body_zhong .ps{
+	font-size: 0.8rem;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+.body_zhong img{
+	width: 100%;
+	height: 15rem;
+	margin-top: 3rem;
+}
+.body_zhong .panda{
+	margin-top: 3rem;
+}
+.body_zhong .panda_span{
+	
+}
+.body_end{
+	position: absolute;
+	width: 92%;
+	height: 6rem;
+	margin-top: 283rem;
+	margin-left: 1.5rem;
+}
+.body_end p{
+	text-align: center;
+	font-size: 0.8rem;
+	margin-top: 0.5rem;
+	line-height: 1.5rem;
+	color: black;
+}
+.body .author{
+	width: 92%;
+	height: 5rem;
+	margin-top: 288rem;
+	position: absolute;
+	margin-left: 1rem;
+	background-color: #E9E6E6;
+	
+	
+}
+.author .tou{
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	margin-top: 0.8rem;
+	margin-left: 0.8rem;
+}
+
+
+.author h5{
+	margin-left: 4.5rem;
+	margin-top: -2.5rem;
+	color: black;
+}
+.author span{
+	font-size: 0.8rem;
+	margin-left: 4.5rem;
+	margin-top: -2.5rem;
+}
+.duo{
+	width: 100%;
+	height: 5rem;
+	position: absolute;
+	margin-top: 293rem;
+}
+.end{
+	width: 100%;
+	height: 3.5rem;
+	background-color: white;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	
+}
+.end .zan{
+	position: absolute;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-left: 5.5rem;
+	margin-top: 0.4rem;
+	color: #838689;
+	
+}
+.end .chat{
+	width: 3rem;
+	height: 3rem;
+	margin-left: 14rem;
+	margin-top: 0.3rem;
+	color: #979ca0;
+}
+.end .span1{
+	position: absolute;
+	font-size: 0.8rem;
+	margin-left:-1.5rem;
+	margin-top: 1.8rem;
+}
+.end .span{
+	position: absolute;
+	font-size: 0.8rem;
+	margin-left:-1.5rem;
+	margin-top: 1.8rem;
+}

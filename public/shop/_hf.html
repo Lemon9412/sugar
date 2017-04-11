@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>护肤</title>
+		<!--公用css-->
+		<link rel="stylesheet" type="text/css" href="../common/css/meta.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/rest.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/mui.min.css" />
+		<!--mui内置额外的图标-->
+		<link rel="stylesheet" type="text/css" href="../common/css/icons-extra.css" />
+		<!--导航栏公用css-->
+		<link rel="stylesheet" type="text/css" href="../common/css/nav_bar.css" />
+		<!--本界面css-->
+		<link rel="stylesheet" type="text/css" href="css/class_hf.css" />
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-back"></a>
+			<span class="mui-title-font">护肤</span>
+			<a href="#"><span class="mui-icon-extra mui-icon-extra-cart lin-height mui-icon-extra-shop"></span></a>
+		</header>
+
+		
+	</body>
+	<!--公用js-->
+	<script src="../common/js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/shop.js" type="text/javascript" charset="utf-8"></script>
+	<!--链接js-->
+	<script src="js/link.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript" charset="utf-8">
+		mui.init({
+			swipeBack: true //启用右滑关闭功能
+		});
+	</script>
+<script type="text/javascript">
+	mui.init({
+			gestureConfig:{
+				doubletap:true
+			},
+			subpages:[{ 
+				url:'pullrefresh_subhf.html',
+				id:'pullrefresh_subhf.html',
+				styles:{
+					top: '44px',
+					bottom: '0px', 
+				}
+			}] 
+		});
+		
+		var contentWebview = null;
+		document.querySelector('header').addEventListener('doubletap',function () {
+			if(contentWebview==null){
+				contentWebview = plus.webview.currentWebview().children()[0];
+			}
+			contentWebview.evalJS("mui('#pullrefresh').pullRefresh().scrollTo(0,0,100)");
+		});
+</script>
+
+</html>

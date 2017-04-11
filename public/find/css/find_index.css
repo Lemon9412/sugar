@@ -48,7 +48,7 @@
     float: left;
     margin-left: 25%;
     margin-top: 0.5rem;
-    background-image: url(../../common/img/explore_icon_follow.png);
+    background-image: url(../images/explore_icon_follow.png);
     background-size: 100% 100%;
 }
 .img2 {
@@ -57,7 +57,7 @@
 	float: left;
 	margin-left: 25%;
 	margin-top: 0.5rem;
-	background-image: url(../../common/img/explore_icon_club.png);
+	background-image: url(../images/explore_icon_club.png);
 	background-size: 100% 100%;
 }
 

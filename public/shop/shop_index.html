@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>商店首页</title>
+		<!--公用css-->
+		<link rel="stylesheet" type="text/css" href="../common/css/meta.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/rest.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/mui.min.css" />
+		<!--mui内置额外的图标-->
+		<link rel="stylesheet" type="text/css" href="../common/css/icons-extra.css" />
+		<!--导航栏公用css-->
+		<link rel="stylesheet" type="text/css" href="../common/css/nav_bar.css" />
+		<!--公用轮播css-->
+		<link rel="stylesheet" type="text/css" href="../common/css/swiper.min.css" />
+		<!--本界面css-->
+		<link rel="stylesheet" type="text/css" href="css/shop_index.css" />
+	</head>
+
+	<body>
+		<!--商店的头部开始-->
+		<header id="header" class="mui-bar mui-bar-nav">
+			<span class="mui-pull-left lin-height ">堆糖商店</span>
+			<a class="mui-icon-extra mui-icon-extra-cart lin-height mui-icon-extra-shop"></a>
+		</header>
+		<!--商店的头部结束-->
+
+		<div id="pullrefresh" class="mui-content">
+
+			<!--商店头部轮播开始-->
+			<div class="swiper-container">
+				<div class="swiper-wrapper top-wrapper">
+
+				</div>
+				<div class="swiper-pagination"></div>
+
+			</div>
+			<!--商店头部轮播开始-->
+
+			<!--商店八个商品类型开始-->
+			<ul class="mui-table-view mui-grid-view shop_class mui-table-view-chevron">
+
+				<!--模拟数据-->
+			</ul>
+			<!--商店八个商品类型开始-->
+
+			<!--商店中间点击查看口碑排行开始-->
+			<div class="body_click">
+				<a onclick="shake()">
+					<div class="body_click_left">
+						<img src="img/click_img.png" />
+						<p class="click_p1">幸福娃娃机</p>
+						<p class="click_p2">摇福袋得礼券</p>
+						<div class="click_content">
+							<p>摇一摇抽奖</p>
+						</div>
+
+					</div>
+				</a>
+				<a href="#">
+					<div class="body_click_right">
+						<img src="img/update_img.png" />
+						<p class="click_p1">口碑排行</p>
+						<p class="click_p2">每周三更新</p>
+						<div class="click_content">
+							<p>点击查看</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<!--商店中间点击查看口碑排行结束-->
+
+			<!--商店会员折扣部分开始-->
+
+			<div class="mui-slider member">
+				<div id="font_header">
+					<p class="font_header_member f_18 f_black">超值购</p>
+				</div>
+				<div class="mui-slider-group mui-slider-loop discount">
+					<!-------->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+
+						<ul class="mui-table-view mui-grid-view discount_json">
+							<!--模拟数据-->
+						</ul>
+					</div>
+				</div>
+
+				<a href="">
+					<div class="all">
+						<p>查看全部</p>
+					</div>
+				</a>
+			</div>
+
+			<!--商店会员折扣部分结束-->
+
+			<!--商店专题部分开始-->
+
+			<ul class="zhuanti">
+				<li id="font_header">
+					<p class="f_18 f_black">专题</p>
+				</li>
+				<!--模拟数据-->
+			</ul>
+
+			<!--商店专题部分结束-->
+		</div>
+	</body>
+	<!--公用js-->
+	<script src="../common/js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/mui.view.js" type="text/javascript" charset="utf-8"></script>
+	<!--获取json数据的js-->
+	<script src="js/shop.js" type="text/javascript" charset="utf-8"></script>
+	<!--公用轮播js-->
+	<script src="../common/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--链接js-->
+	<script src="js/link.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		mui.init({
+			swipeBack: true //启用右滑关闭功能
+		});
+	</script>
+	<script type="text/javascript">
+		//轮播
+		var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				autoplay: 3000,
+				speed: 300,
+				autoplayDisableOnInteraction: false,
+				loop: true,
+			}
+
+		);
+
+	</script>
+
+</html>

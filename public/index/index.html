@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="../common/css/nav_bar.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/css/meta.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/css/rest.css"/>
+		
+		
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/css/footer.css"/>
+		
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+		<title>堆糖</title>
+		<script type="text/javascript">
+			function showDiv() {
+				document.getElementById("mengban").style.display = "block";
+				
+			}
+			function photo(){
+				var camera=plus.camera.getCamera(1);
+				camera.captureImage(function(url){
+					console.log(url);
+				},function(e){
+					
+				},{
+					filename:"_doc/",//保存时文件名用目录,文件名称有系统生成，保证不重复
+					format:camera.supportedImageFormats[0],
+					
+					
+					
+				});
+			}
+			  
+		           function galleryImg() {
+						// 从相册中选择图片
+						console.log("从相册中选择图片:");
+					    plus.gallery.pick( function(path){
+					    	
+					    }, function ( e ) {
+					    	
+					    }, {
+					    	filter:"image"
+					    	} );
+					    }
+			
+		</script>
+	</head>
+	<body>
+		<!--首页的头部开始-->
+		<header id="header" class="mui-bar mui-bar-nav">
+			<span class="mui-pull-left lin-height ">每日精选</span>
+			<a href="#" onclick="showDiv()"><span class="mui-icon mui-icon-plusempty mui-icon-right-nav mui-icon-home-add"></span></a>
+			</header>
+				<div id="mengban"><a href="index.html">
+				<div class="mui-icon mui-icon-camera mengDiv1" onclick="photo()" style="font-size: 4.5rem;color: #C0C0C0; margin-top: 6rem;margin-left: 4.5rem;">
+					
+					<p class=" meng_p1" >拍照</p>
+				</div>
+					
+
+					<div class="mui-icon mui-icon-image mengDiv2" onclick="galleryImg()" style="font-size: 3.8rem;color: #C0C0C0; margin-top: 2rem;margin-left: 4.9rem;">
+							<p class="meng_p2">从相册上传照片</p>
+						</div>
+						
+
+						<div class="mui-icon mui-icon-weibo mengDiv3" style="font-size: 5rem;color: #C0C0C0; margin-top: 1rem;margin-left: 4.5rem;">
+							<p class="meng_p3">从网页抓取照片</p>
+						</div>
+						
+						
+						<a href="index.html" class="mui-icon mui-icon-closeempty X" style="font-size: 3.5rem;color: white !important;"></a>
+
+			</a></div>
+		
+		<!--首页的头部结束-->
+		<div class="mui-content">
+			
+		
+		<div class="body" id="body">
+			<div class="neck"><a onclick="beautiful1()">
+			<div class="lunbo">
+				
+			</div>
+			<div class="bottom">
+				<p>我从买过的几十管口红里，挑出了最爱的三款</p>
+				<span>文章|Vereesea_yu</span>
+			</div>
+		</a></div>
+			<ul class="body_ul" id="list">
+				
+			<!--	<li class="content"><a href="#">
+				<span class="word1" >种草|说说我用过的14种双眼皮贴</span>
+				<span class="word11 ">文章|僵尸粉粉菠萝兵</span>
+				
+				<img src="img/qie_02.png" class="img1"/>
+				</li>
+				<li class="content"><a href="#">
+				<span class="word1">雨中香港，有不一样的味道</span>
+				<span class="word11 ">专辑|长九</span>
+				
+				<img src="img/17.jpg" class="img1"/>
+			</a>
+				</li>
+				<li class="content"><a href="#">
+				<span class="word1" style="word-wrap:break-word;width: 13rem;">吃个美美的早餐，一整天心情都会好</span>
+				<span class="word11 ">专辑|包子</span>
+				
+				<img src="img/11.jpg" class="img1"/>
+			</a>
+				</li>
+				</li>
+				<li class="content"><a href="#">
+				<span class="word1" style="word-wrap:break-word;width: 13rem;">《我们诞生在中国》 我们从来不缺少美</span>
+				<span class="word11 ">文章|西瓜</span>
+				
+				<img src="img/5.jpg" class="img1"/>
+			</a>
+				</li>-->
+			</ul>
+		</div>
+</div>
+	</body>
+	<script src="js/link.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>

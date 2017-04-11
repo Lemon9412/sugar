@@ -1,0 +1,184 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.main{
+	width: 100%;
+	height: auto;
+}
+
+.nav{
+	z-index: 1;
+	width: 100%;
+	height: 2.5rem;
+	background-color: red;
+	position: fixed;
+	background-color: white;
+	/*bottom: 0;
+	left: 0;*/
+	border: 1px solid #CCCCCC;
+}
+.nav .word{
+	position: absolute;
+	font-size: 1rem;
+	margin-top: 0.6rem;
+	margin-left: 2.7rem;
+	
+}
+.nav img {
+	width: 11%;
+	height: 1.5rem;
+	top: 0.6rem;
+	position: absolute;
+}
+.nav span{
+	position: absolute;
+	color: black;
+	font-size: 1.5rem;
+	margin-left: 1.5rem;
+	margin-top: 0.4rem;
+}
+.top h5{
+	font-size: 1rem;
+	margin-left: 0.5rem;
+	color: black;
+	co
+}
+.top{
+	position: absolute;
+	margin-top: 3rem;
+	width: 100%;
+	height: 20rem;
+	
+}
+.img{
+	width: 2rem;
+	height: 2rem;
+	margin-top: 1rem;
+	margin-left: 1rem;
+	border-radius: 50%;
+}
+.top_span{
+	position: absolute;
+	font-size: 0.7rem;
+	margin-top: 1rem;
+}
+.top_span1{
+	position: absolute;
+	font-size: 0.6rem;
+	margin-top: 2rem;
+	margin-left: 0.2rem;
+	
+}
+.top_span2{
+	position: absolute;
+	font-size: 0.8rem;
+	margin-top: 4rem ;
+	margin-left: -2rem;
+}
+.img1{
+	width: 92%;
+	height: 10rem;
+	margin-left: 1rem;
+	margin-top: 16rem;
+}
+.body_ul h5{
+	font-size: 0.8rem;
+	margin-top: 1rem;
+	margin-left: 0.8rem;
+	color: black;
+}
+.body_ul .img3{
+	width: 92%;
+	margin-left: 0.8rem;
+	margin-top:2rem ;
+}
+.body_ul li{
+	font-size: 0.8rem;
+	margin-top: 1.5rem;
+	margin-left: 0.8rem;
+}
+
+
+
+.body_ul .h5{
+	margin-top: 8rem;
+}
+
+
+.body_end{
+	width: 92%;
+	height: 5rem;
+	background-color: #f0eded;
+	margin-left: 1rem;
+	margin-top: 3rem;
+}
+.body_end .img4{
+	width: 3rem;
+	height: 3rem;
+	margin-top: 0.5rem;
+	margin-left: 0.5rem;
+	border-radius: 50%;
+}
+.body_end span{
+	position: absolute;
+	
+	
+}
+.body_end .author{
+	font-size: 0.7rem;
+	margin-top: 0.8rem;
+	margin-left: 0.8rem;
+}
+.body_end .author1{
+	font-size: 0.8rem;
+	margin-top:-2rem;
+	margin-left: 4.5rem;
+}
+.body_end .author2{
+	font-size: 0.7rem;
+	margin-top: -2rem;
+	margin-left: 4.5rem;
+}
+.div{
+	width: 100%;
+	height: 5rem;
+}
+.end{
+	width: 100%;
+	height: 3rem;
+	background-color: white;
+	margin-top: 25rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	_position:absolute ;
+}
+.end .zan{
+	position: absolute;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-left: 5.5rem;
+	margin-top: 0.4rem;
+	color: #747575;
+	
+}
+.end .chat{
+	width: 3rem;
+	height: 3rem;
+	margin-left: 14rem;
+	margin-top: 0.3rem;
+	color: #91969a;
+}
+.end .span1{
+	position: absolute;
+	font-size: 0.8rem;
+	margin-left:-1.5rem;
+	margin-top: 1.8rem;
+}
+.end .span{
+	position: absolute;
+	font-size: 0.8rem;
+	margin-left:-1.5rem;
+	margin-top: 1.8rem;
+}

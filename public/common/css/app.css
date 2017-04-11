@@ -25,21 +25,3 @@
 .mui-bar-tab .mui-tab-item {
     color: #cdcdcd;
 }
-
-
-.mui-bar {
-	background-color: #FFFFFF;
-	box-shadow: none;
-	border-bottom: 1px solid #CCCCCC;
-}
-.mui-content {
-	background-color: #FFFFFF;
-}
-.mui-card-footer {
-	padding: 5px 10px;
-}
-
-.mui-card-footer>a {
-	color: #ff5959;
-}
-

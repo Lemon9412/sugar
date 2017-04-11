@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		
+		<link rel="stylesheet" type="text/css" href="../common/css/meta.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/css/rest.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/css/nav_bar.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css"/>
+		<link rel="stylesheet" type="text/css" href="css/food1.css"/>
+		<link rel="stylesheet" type="text/css" href="css/message.css"/>
+		
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function showDiv() {
+				document.getElementById("mengban").style.display = "block";
+				
+			}
+		</script>
+		
+		
+	</head>
+	<body>
+		<div class="quan">
+			<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-back"></a>
+			<span class="mui-title-font">文章详情</span>
+			<a href="#" onclick="showDiv()"><span class="mui-icon mui-icon-more mui-icon-home-more"></span></a>
+		</header>
+		<div id="mengban"><a href="index.html">
+				<div class="mui-icon mui-icon-pengyouquan mengDiv1" onclick="photo()" style="font-size: 3rem;color: #C0C0C0; margin-top: 7.5rem;margin-left: 5.5rem;">
+					
+					<p class=" meng_p1" >分享到朋友圈</p>
+				</div>
+					
+
+					<div class="mui-icon mui-icon-qq mengDiv2" onclick="galleryImg()" style="font-size: 3rem;color: #C0C0C0; margin-top: 1rem;margin-left: 5.5rem;">
+							<p class="meng_p2">分享到QQ</p>
+						</div>
+						
+
+						<div class="mui-icon mui-icon-weibo mengDiv3" style="font-size: 4rem;color: #C0C0C0; margin-top: 1rem;margin-left: 5.3rem;">
+							<p class="meng_p3">分享到微博</p>
+						</div>
+						
+						
+						<a href="food1.html" class="mui-icon mui-icon-closeempty X" style="font-size: 3.5rem;color: white !important;"></a>
+
+			</a></div>
+			<div class="main">
+				<div class="mengban">
+					<h4 id="article_title">珠珠的厨房By Fiona 早餐 午餐 下午茶</h4>
+					<img src="img/24.jpg"/>
+					<p>by Fiona 霓裳</p>
+				</div>
+			</div>
+			<div class="body">
+				<ul class="food_ul" id="food_ul">
+				
+				</ul>
+				<div class="author">
+				<img src="img/24.jpg" class="tou"/>
+				<h5>霓裳</h5>
+				<span>90后厨师</span>
+			</div>
+		</div>
+			<input type="hidden" id = "user_id" name = "strategy_id">
+		<div class="end" id="end" style="z-index: 101;">
+				<span class="mui-icon mui-icon-star zan"><span class="span">收藏</span></span>
+					<span class="mui-icon mui-icon-chatbubble-filled chat"><span class="span1">评论</span></span>
+				
+			</div>
+		</div>
+
+	</body>
+</html>

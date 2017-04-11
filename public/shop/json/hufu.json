@@ -1,0 +1,14 @@
+[
+{"imgId":1,"url":"img/hufu5.png","inner1":"全家就靠这一瓶万用霜","inner2":"G&M绵羊脂深度滋润霜250g","inner3":"15758","inner4":"49","onclick":"hf_details()"},
+{"imgId":2,"url":"img/hufu6.png","inner1":"补水控油超清秀","inner2":"innisfree悦诗风吟绿茶精萃保湿洁面膏 150ml","inner3":"11543","inner4":"58","onclick":"hf_details()"},
+{"imgId":3,"url":"img/hufu1.png","inner1":"滋润美肌就这一瓶","inner2":"Loshi马油面霜 220ml","inner3":"10990","inner4":"32","onclick":"hf_details()"},
+{"imgId":4,"url":"img/xiangqing1.png","inner1":"控油镇定神仙水","inner2":"资生堂艳容露神仙水 150ml","inner3":"33045","inner4":"100","onclick":"hf_details()"},
+{"imgId":5,"url":"img/hufu3.png","inner1":"英国畅销品牌","inner2":"Boots博姿天然小黄瓜脸部磨砂膏 50ml","inner3":"17208","inner4":"29","onclick":"hf_details()"},
+{"imgId":6,"url":"img/hufu4.png","inner1":"滋润美肌就这一瓶","inner2":"Loshi马油面霜 220ml/瓶 共2瓶","inner3":"4909","inner4":"54","onclick":"hf_details()"},
+{"imgId":7,"url":"img/hufu7.png","inner1":"日本断货王","inner2":"Daiso保湿精华液 30ml/瓶 共2瓶","inner3":"309","inner4":"55","onclick":"hf_details()"},
+{"imgId":8,"url":"img/hufu8.png","inner1":"日本断货王","inner2":"Daiso保湿精华液 30ml/瓶","inner3":"531","inner4":"32","onclick":"hf_details()"},
+{"imgId":9,"url":"img/discount1.png","inner1":"连续10年Cosme No.1","inner2":"Unicharm超级省水化妆棉 共2盒","inner3":"12530","inner4":"43","onclick":"hf_details()"},
+{"imgId":10,"url":"img/discount2.png","inner1":"毛孔清道夫","inner2":"DMC黑里透白冻膜 225g","inner3":"7545","inner4":"99","onclick":"hf_details()"},
+{"imgId":11,"url":"img/discount3.png","inner1":"专属懒人的美肤圣品","inner2":"RENKOMAY格力面霜 15g","inner3":"12179","inner4":"55","onclick":"hf_details()"},
+{"imgId":12,"url":"img/discount8.png","inner1":"吸收超快 补水","inner2":"AHC B5玻尿酸爽肤水 120ml","inner3":"3162","inner4":"115","onclick":"hf_details()"}
+]

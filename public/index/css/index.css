@@ -1,0 +1,172 @@
+#mengban{
+	width: 100%;
+	height: 110vh;
+	position: fixed;
+	background-color: black;
+	z-index: 1000;
+	opacity: 0.9;
+	/*left: -0.01em;*/
+	top: -1rem;
+	display: none;
+	
+}
+.fu{
+	/*position: absolute;*/
+	font-size: 1.5rem;
+	color: red;
+	bottom: 2rem;
+	margin-left: 19rem;
+	margin-top: 1rem;
+}
+.mengDiv1 {
+	width: 100%;
+	height: 4rem;
+}
+
+.meng_a1 {
+	position: absolute;
+	top: 6rem;
+	left: 10%;
+}
+
+.meng_p1 {
+	position: absolute;
+	color: white;
+	font-size: 0.8rem;
+	left: 45%;
+	top: 8.5rem;
+	
+}
+
+.mengDiv2 {
+	width: 100%;
+	height: 4rem;
+}
+
+.meng_a2 {
+	position: absolute;
+	top: 12rem;
+	left: 10%;
+}
+
+.meng_p2 {
+	position: absolute;
+	color: white;
+	font-size: 0.8rem;
+	left: 45%;
+	top: 14rem;
+	
+}
+
+.mengDiv3 {
+	
+	width: 100%;
+	height: 4rem;
+}
+
+.meng_a3 {
+	position: absolute;
+	top: 3rem;
+	left: 10%;
+}
+
+.meng_p3 {
+	position: absolute;
+	color: white;
+	top: 19.5rem;
+	font-size: 0.8rem;
+	left: 45%;
+}
+
+.X{
+	color: white !important;
+	position: absolute;
+	
+	top: 24rem;
+	left: 40%;
+}
+.neck{
+	width: 100%;
+	height: 13rem;
+	margin-top: 0rem;
+	background:url(../img/kou.jpg) ;
+	
+}
+.lunbo{
+	width: 100%;
+	height: 10rem;
+	background:url(../img/kou.jpg) no-repeat;
+	background-size: 100% 10rem;
+}
+.bottom{
+	width: 100%;
+	height: 3rem;
+	background-color: white;
+}
+.bottom p{
+	font-family: "微软雅黑";
+	position: absolute;
+	font-size: 0.8rem;
+	margin-top: 0.5rem;
+	margin-left: 0.5rem;
+	color: black;
+}
+.bottom span{
+	font-family: "微软雅黑";
+	position: absolute;
+	font-size: 0.8rem;
+	margin-top: 1.8rem;
+	margin-left: 0.5rem;
+	color: #757779 !important;
+}
+.body_top_img{
+	width: 100%;
+	height: 14rem;
+}
+.body_ul li{
+	
+	width: 100%;
+	height: 5rem;
+	margin-top: 0.5rem;
+	background-color: white;
+	
+}
+.content span{
+	
+	position: absolute;
+	
+	margin-top: 0.3rem;
+	margin-left: 0.3rem;
+	font-size: 0.9rem;
+	font-family: "微软雅黑";
+	color: black;
+}
+
+.content .img1{
+	width: 34%;
+	height: 5rem;
+	/*margin-left: 11.5rem;*/
+	float: right;
+}
+.content .word{
+	word-wrap:break-word;
+	width: 13rem;
+}
+.content .word11{
+	margin-top: 3.7rem;
+	font-size: 0.7rem;
+	color: #757779 ;
+}
+.content .word111{
+
+	font-size: 0.7rem;
+	/*width: 60%;*/
+	margin-left: 54%;
+	margin-top: 4rem;
+	color: #757779 !important;
+	
+}
+.body_ul .word1{
+	width: 13rem;
+	word-wrap:break-word;
+}

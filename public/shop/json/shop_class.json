@@ -1,0 +1,10 @@
+[
+{"imgId":1,"url":"img/mid-class1.png","inner":"护肤","onclick":"class_hf()"},
+{"imgId":2,"url":"img/mid-class2.png","inner":"彩妆","onclick":"class_cz()"},
+{"imgId":3,"url":"img/mid-class3.png","inner":"个人护理","onclick":"class_huli()"},
+{"imgId":4,"url":"img/mid-class4.png","inner":"美食","onclick":"class_food()"},
+{"imgId":5,"url":"img/mid-class5.png","inner":"文具手帐","onclick":"class_wenju()"},
+{"imgId":6,"url":"img/mid-class6.png","inner":"家居","onclick":"class_jiaju()"},
+{"imgId":7,"url":"img/mid-class7.png","inner":"畅销单品","onclick":"class_danpin()"},
+{"imgId":8,"url":"img/mid-class8.png","inner":"全部分类","onclick":"class_all()"}
+]

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>美食</title>
+		<!--公用css-->
+		<link rel="stylesheet" type="text/css" href="../common/css/meta.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/rest.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/mui.min.css" />
+		<!--mui内置额外的图标-->
+		<link rel="stylesheet" type="text/css" href="../common/css/icons-extra.css" />
+		<!--导航栏公用css-->
+		<link rel="stylesheet" type="text/css" href="../common/css/nav_bar.css" />
+		<!--本界面css-->
+		<link rel="stylesheet" type="text/css" href="css/class_hf.css"/>
+	</head>
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-back"></a>
+			<span class="mui-title-font">美食</span>
+			<a href="#"><span class="mui-icon-extra mui-icon-extra-cart lin-height mui-icon-extra-shop"></span></a>
+		</header>
+		
+		<div class="mui-content">
+			<div class="body">
+				<div class="body_header">
+					<table class="table">
+						<tr ><td class="td td1">营养早餐</td><td class="td td1">轻松下午茶</td><td class="td">饮品</td></tr>
+						<tr ><td class="td td1">零食</td><td class="td td1">纤体</td><td class="td">口服保健</td></tr>
+					</table>
+				</div>
+				<div class="body_mid">
+					<ul>
+						<li><a href="#" style="color: red;">默认</a></li>
+						<li><a href="">热度</a></li>
+						<li><a href="">新品</a></li>
+						<li><a href="">价格</a></li>
+					</ul>	
+				</div>
+				<div class="body_bottom">
+
+					<ul class="class_food">
+					<!--模拟数据-->
+					</ul>
+				</div>
+				
+				
+			</div>
+		
+		</div>
+
+	</body>
+	<!--公用js-->
+	<script src="../common/js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../common/js/mui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/shop.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		mui.init({
+			swipeBack: true //启用右滑关闭功能
+		});
+	</script>
+	
+</html>

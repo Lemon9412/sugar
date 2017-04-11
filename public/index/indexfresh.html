@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" type="text/css" href="../common/css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/css/nav_bar.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<span class="mui-pull-left lin-height ">每日精选</span>
+			<a href="#" onclick="showDiv()"><span class="mui-icon mui-icon-plusempty mui-icon-right-nav mui-icon-home-add"></span></a>
+			</header>
+			<div id="mengban">
+				<div class="mui-icon mui-icon-camera mengDiv1" onclick="photo()" style="font-size: 5rem;color: #C0C0C0; margin-top: 6rem;margin-left: 4rem;">
+					
+					<p class=" meng_p1" >拍照</p>
+				</div>
+					
+
+					<div class="mui-icon mui-icon-image mengDiv2" onclick="galleryImg()" style="font-size: 4.5rem;color: #C0C0C0; margin-top: 2rem;margin-left: 4.3rem;">
+							<p class="meng_p2">从相册上传照片</p>
+						</div>
+						
+
+						<div class="mui-icon mui-icon-weibo mengDiv3" style="font-size: 5rem;color: #C0C0C0; margin-top: 1rem;margin-left: 4.5rem;">
+							<p class="meng_p3">从网页抓取照片</p>
+						</div>
+						
+						
+						<a href="index.html" class="mui-icon mui-icon-closeempty X" style="font-size: 3.5rem;color: white !important;"></a>
+
+			</div>
+		
+		<!--首页的头部结束-->
+		<div class="body" id="body">
+			<div class="neck"><a href="beautiful1.html">
+			<div class="lunbo">
+				
+			</div>
+			<div class="bottom">
+				<p>我从买过的几十管口红里，挑出了最爱的三款</p>
+				<span>文章|Vereesea_yu</span>
+			</div>
+		</a></div>
+			<ul class="body_ul" id="list">
+				<li class="content"><a href="#">
+				<span class="word1" >种草|说说我用过的14种双眼皮贴</span>
+				<span class="word11 ">文章|僵尸粉粉菠萝兵</span>
+				
+				<img src="img/qie_02.png" class="img1"/>
+				</li>
+				<li class="content"><a href="#">
+				<span class="word1">雨中香港，有不一样的味道</span>
+				<span class="word11 ">专辑|长九</span>
+				
+				<img src="img/17.jpg" class="img1"/>
+			</a>
+				</li>
+				<li class="content"><a href="#">
+				<span class="word1" style="word-wrap:break-word;width: 13rem;">吃个美美的早餐，一整天心情都会好</span>
+				<span class="word11 ">专辑|包子</span>
+				
+				<img src="img/11.jpg" class="img1"/>
+			</a>
+				</li>
+				</li>
+				<li class="content"><a href="#">
+				<span class="word1" style="word-wrap:break-word;width: 13rem;">《我们诞生在中国》 我们从来不缺少美</span>
+				<span class="word11 ">文章|西瓜</span>
+				
+				<img src="img/5.jpg" class="img1"/>
+			</a>
+				</li>
+			</ul>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+				<a  href="index.html" class="mui-tab-item mui-active" href="#tabbar">
+					<p ><img class="nav-footer-img" src="../common/img/tab_icon_home.png"/></p>
+					<span class="mui-tab-color">首页</span>
+				</a>
+				<a href="#" class="mui-tab-item" href="#tabbar-with-chat">
+					<p><img class="nav-footer-img" src="../common/img/tab_icon_explore.png"/></p>
+					<span>发现</span>
+				</a>
+				<a href="#" class="mui-tab-item" href="find.html">
+					<p><img class="nav-footer-img" src="../common/img/tab_icon_store.png"/></p>
+					<span>商店</span>
+				</a>
+				<a href="#" class="mui-tab-item" href="#tabbar-with-map">
+					<p><img class="nav-footer-img" src="../common/img/tab_icon_me.png"/></p>
+					<span>我</span>
+				</a>
+			</nav>
+
+		
+	</body>
+	<script src="../common/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//启用双击监听
+		mui.init({
+			gestureConfig:{
+				doubletap:true
+			},
+			subpages:[{
+				url:'index_sub.html',
+				id:'index_sub.html',
+				styles:{
+					top: '45px',
+					bottom: '0px',
+				}
+			}]
+		});
+	
+		var contentWebview = null;
+		document.querySelector('header').addEventListener('doubletap',function () {
+			if(contentWebview==null){
+				contentWebview = plus.webview.currentWebview().children()[0];
+			}
+			contentWebview.evalJS("mui('#pullrefresh').pullRefresh().scrollTo(0,0,100)");
+		});
+	</script>
+
+</html>

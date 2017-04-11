@@ -1,0 +1,94 @@
+.mui-content{
+	background-color: #FFFFFF!important;
+}
+.body .ul {
+	width: 100%;
+	height: 16rem;
+	border-bottom: 1px solid gainsboro;
+}
+.body .ul img{
+	width: 100%;
+	height: 12rem;
+}
+.body .ul li{
+	text-align: center;
+}
+.body .right {
+	float: right;margin-right: 0.5rem;
+}
+.body .font_content {
+	margin-left: 0.5rem;
+	position: relative;
+	top: 1.2rem;
+}
+.body_mid_cha {
+	width: 100%;height: 7.5rem;margin-top: 4rem;
+}
+.body_mid2 img {
+	width: 90%;height: 16rem;margin-top: 2rem;
+	margin-left: 5%;
+}
+.body_mid2 .body_mid2_p1 {
+	text-align: center;
+	line-height: 3rem;
+	font-size: 0.6rem;
+}
+.body_mid2 .body_mid2_p2 {
+	width: 90%;
+	margin-left: 5%;
+}
+.body_footer {
+	width: 90%;
+	height: 5.1%;
+	border: 1px solid gainsboro;
+	margin-left: 5%;
+	margin-top: 2rem;
+}
+.body_footer .font_footer1 {
+	font-weight: 700;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 2rem;
+}
+.body_footer .font_footer2 {
+	width: 90%;
+	margin-left: 5%;
+	font-size: 0.8rem;
+}
+.body_footer2 {
+	width: 90%;
+	height: 10%;
+	border: 1px solid ghostwhite;
+	margin-left: 5%;
+	margin-top: 2rem;
+}
+.body_footer2 .font_footer1 {
+	font-weight: 700;
+	font-size: 1.2rem;
+	text-align: center;
+	line-height: 2rem;
+}
+.body_footer2 .font_footer2 {
+	width: 100%;
+	text-align: center;
+	margin-top: 1rem;
+}
+.body_footer2 .font_footer3 {
+	width: 100%;
+	text-align: center;
+}
+.body_footer2 .font_footer4 {
+	width: 40%;
+	height: 2rem;
+	background-color: red;
+	margin: 1rem auto;
+	color: white;
+	text-align: center;
+	line-height: 2rem;
+	border-radius: 0.5rem;
+}
+.body_footer2 .font_footer5 {
+	width: 100%;
+	text-align: center;
+	font-size: 0.7rem;
+}
